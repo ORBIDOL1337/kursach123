@@ -6,7 +6,18 @@
         xmlns:local="clr-namespace:Тестирование"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    <Viewbox Stretch="Fill">
+        <Grid Height="450" Width="800" MinHeight="450" MinWidth="800" Background="Gray">
+            <Label Content="Авторизация" HorizontalAlignment="Left" Margin="326,126,0,0" VerticalAlignment="Top" FontSize="40" FontFamily="Bahnschrift Light Condensed" Height="54" Width="186"/>
+            <Label x:Name="login" Content="Логин" HorizontalAlignment="Left" Margin="277,199,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="password" Content="Пароль" HorizontalAlignment="Left" Margin="269,230,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="tb_login" HorizontalAlignment="Left" Margin="326,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="186"/>
+            <TextBox x:Name="tb_password" HorizontalAlignment="Left" Margin="362,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Visibility="Collapsed" TextChanged="tb_password_TextChanged"/>
+            <PasswordBox x:Name="passwordbox" HorizontalAlignment="Left" Margin="326,234,0,0" VerticalAlignment="Top" Width="186" PasswordChanged="passwordbox_PasswordChanged"/>
+            <Button Content="Войти" HorizontalAlignment="Left" Margin="326,259,0,0" VerticalAlignment="Top" Width="186" Click="Button_Click" Height="38"/>
+            <CheckBox x:Name="checkbox" Content="Показывать пароль" HorizontalAlignment="Left" Margin="534,234,0,0" VerticalAlignment="Top" Click="checkbox_Click"/>
+            <Button x:Name="guest" Content="Гость" HorizontalAlignment="Left" Margin="709,10,0,0" VerticalAlignment="Top" Width="81" Height="21" Click="guest_Click"/>
+
+        </Grid>
+    </Viewbox>
 </Window>
